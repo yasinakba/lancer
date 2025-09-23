@@ -36,6 +36,8 @@ dependencies:
   cupertino_icons: ^1.0.8
   get: ^4.7.2
   flutter_screenutil: ^5.9.3
+  frino_icons: ^2.0.0
+  iconsax: ^0.0.8
 
 dev_dependencies:
   flutter_test:

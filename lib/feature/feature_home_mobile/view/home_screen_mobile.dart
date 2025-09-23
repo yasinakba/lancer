@@ -4,7 +4,10 @@ import 'package:get/get.dart';
 import 'package:lancer_resume/feature/feature_home_mobile/controller/home_mobile_controller.dart';
 import 'package:lancer_resume/feature/feature_home_mobile/view/widget/filter.dart';
 import 'package:lancer_resume/feature/feature_home_mobile/view/widget/profile_header.dart';
+import 'package:lancer_resume/feature/feature_home_mobile/view/widget/rich_text_with_see_all.dart';
 import 'package:lancer_resume/feature/feature_home_mobile/view/widget/search_field.dart';
+import 'package:lancer_resume/feature/feature_home_mobile/view/widget/series_list.dart';
+import 'package:lancer_resume/global_entity/data.dart';
 
 class HomeScreenMobile extends StatelessWidget {
   final HomeControllerMobile controllerMobile = Get.put(HomeControllerMobile());
@@ -25,13 +28,20 @@ class HomeScreenMobile extends StatelessWidget {
             padding: EdgeInsetsDirectional.symmetric(horizontal: 10.w),
             width: 360.w,
             height: 690.h,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                ProfileHeader(),
-                SearchField(),
-                Filter(),
-              ],
+            child: SingleChildScrollView(
+              physics: BouncingScrollPhysics(),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  ProfileHeader(),
+                  SearchField(),
+                  Filter(),
+                  RichTextWithSeeAll(title1: 'Feature', title2: 'Series',),
+                  SeriesList(list: featuredSeries,addTo: true,),
+                  RichTextWithSeeAll(title1: 'My', title2: 'List',),
+                  SeriesList(list: myListFilm,addTo: false,),
+                ],
+              ),
             ),
           );
         },
