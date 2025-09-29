@@ -16,7 +16,7 @@ class SeriesCard extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return SeriesScreenMobiles();
+          return SeriesScreenMobiles(series: item,);
         },));
       },
       child: Container(
