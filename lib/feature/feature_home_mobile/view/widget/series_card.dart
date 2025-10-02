@@ -7,7 +7,7 @@ import 'package:lancer_resume/feature/feature_series_mobile/view/series_screen_m
 import '../../../../global_entity/series.dart';
 
 class SeriesCard extends StatelessWidget {
- final Series item;
+ final SeriesEntity item;
  final bool addTo;
  final HomeControllerMobile controllerMobile = Get.put(HomeControllerMobile());
  SeriesCard({required this.item,this.addTo = false});

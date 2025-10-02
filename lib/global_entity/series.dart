@@ -1,4 +1,4 @@
-class Series{
+class SeriesEntity{
   final String? name;
   final String? imageUrl1;
   final String? imageUrl2;
@@ -8,5 +8,5 @@ class Series{
   final String? remainTime;
   final String? description;
 
-  Series({this.name, this.imageUrl1,this.imageUrl2, this.year, this.genre, this.seasons,this.description,this.remainTime});
+  SeriesEntity({this.name, this.imageUrl1,this.imageUrl2, this.year, this.genre, this.seasons,this.description,this.remainTime});
 }

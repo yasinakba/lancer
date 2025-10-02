@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:lancer_resume/feature/featur_navigation_bar/nave_screen.dart';
 import 'package:lancer_resume/feature/feature_home_mobile/view/home_screen_mobile.dart';
 
 void main() {
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
         ),
-        home: HomeScreenMobile(),
+        home: NavScreen(),
       ),
     );
   }

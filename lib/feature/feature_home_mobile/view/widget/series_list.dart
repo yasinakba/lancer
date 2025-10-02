@@ -6,7 +6,7 @@ import 'package:lancer_resume/feature/feature_home_mobile/view/widget/series_car
 import 'package:lancer_resume/global_entity/series.dart';
 
 class SeriesList extends StatelessWidget {
-  final List list;
+  final List<SeriesEntity> list;
   final bool addTo;
 
   SeriesList({required this.list,this.addTo = false});
@@ -22,7 +22,7 @@ class SeriesList extends StatelessWidget {
           itemCount: list.length,
           scrollDirection: Axis.horizontal,
           itemBuilder: (context, index) {
-            Series series = list[index];
+            SeriesEntity series = list[index];
             return SeriesCard(item: series,addTo: addTo,);
           },);
       }),

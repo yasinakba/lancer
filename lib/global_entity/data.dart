@@ -1,9 +1,13 @@
+import 'package:flutter/material.dart';
+import 'package:lancer_resume/feature/feature_home_mobile/view/home_screen_mobile.dart';
+import 'package:lancer_resume/feature/feature_library_screen_mobile/view/library_screen_mobile.dart';
+import 'package:lancer_resume/feature/feature_watch_screen_mobile/view/watch_screen_mobile.dart';
 import 'package:lancer_resume/global_entity/series.dart';
 
 
-final List<Series> featuredSeries = [
+final List<SeriesEntity> featuredSeries = [
 
-  Series(
+  SeriesEntity(
       remainTime: '11',
       name: 'Money Heist',
       imageUrl1: "https://i.postimg.cc/QCGtK6Qn/money-heist1.jpg",
@@ -15,7 +19,7 @@ final List<Series> featuredSeries = [
           'A lonely young woman, Sintel, helps and befriends a dragon,whom she calls Scales. But when he is kidnapped by an adult'
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
-  Series( remainTime: '5',
+  SeriesEntity( remainTime: '5',
       name: 'Breaking Bad',
       imageUrl1: "https://i.postimg.cc/CMJk8BMN/breaking-bad1.jpg",
       imageUrl2: "https://i.postimg.cc/FHx7Mwfx/breaking-bad2.jpg",
@@ -26,7 +30,7 @@ final List<Series> featuredSeries = [
           'A lonely young woman, Sintel, helps and befriends a dragon,whom she calls Scales. But when he is kidnapped by an adult'
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
-  Series( remainTime: '10',
+  SeriesEntity( remainTime: '10',
       name: '13 Reason Why',
       imageUrl1: "https://i.postimg.cc/Gpx38DPJ/13-reasons-why1.jpg",
       imageUrl2: "https://i.postimg.cc/prng8bbb/13-reasons-why2.jpg",
@@ -37,7 +41,7 @@ final List<Series> featuredSeries = [
           'A lonely young woman, Sintel, helps and befriends a dragon,whom she calls Scales. But when he is kidnapped by an adult'
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
-  Series( remainTime: '14',
+  SeriesEntity( remainTime: '14',
       name: 'The Witcher',
       imageUrl1: "https://i.postimg.cc/RCLPsL4x/witcher1.jpg",
       imageUrl2: "https://i.postimg.cc/vHStkPKk/witcher2.jpg",
@@ -48,7 +52,7 @@ final List<Series> featuredSeries = [
           'A lonely young woman, Sintel, helps and befriends a dragon,whom she calls Scales. But when he is kidnapped by an adult'
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
-  Series( remainTime: "7",
+  SeriesEntity( remainTime: "7",
       name: 'Dark',
       imageUrl1: "https://i.postimg.cc/rmmpB93Z/dark2.jpg",
       imageUrl2: "https://i.postimg.cc/rmmpB93Z/dark2.jpg",
@@ -59,7 +63,7 @@ final List<Series> featuredSeries = [
           'A lonely young woman, Sintel, helps and befriends a dragon,whom she calls Scales. But when he is kidnapped by an adult'
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
-  Series( remainTime: '27',
+  SeriesEntity( remainTime: '27',
       name: 'Lucifer',
       imageUrl1: "https://i.postimg.cc/fyjsrt5T/lucifer2.jpg",
       imageUrl2: "https://i.postimg.cc/fyjsrt5T/lucifer2.jpg",
@@ -72,8 +76,8 @@ final List<Series> featuredSeries = [
           'her lost friend Scales.'),
 ];
 
-final List<Series> myListFilm = [
-  Series(
+final List<SeriesEntity> myListFilm = [
+  SeriesEntity(
       name: 'Vis a Vis',
       imageUrl1: "https://i.postimg.cc/SxJSyGGw/visavis1.jpg",
       imageUrl2: "https://i.postimg.cc/zDRPV7Tm/wp4651659.jpg",
@@ -84,7 +88,7 @@ final List<Series> myListFilm = [
       'A lonely young woman, Sintel, helps and befriends a dragon,whom she calls Scales. But when he is kidnapped by an adult'
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
-  Series(
+  SeriesEntity(
       name: 'Squid Game',
       imageUrl1: "https://i.postimg.cc/XJFXngnV/squid-game2.png",
       imageUrl2: "https://i.postimg.cc/XJFXngnV/squid-game2.png",
@@ -95,7 +99,7 @@ final List<Series> myListFilm = [
       'A lonely young woman, Sintel, helps and befriends a dragon,whom she calls Scales. But when he is kidnapped by an adult'
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
-  Series(
+  SeriesEntity(
       name: 'Barbarians',
       imageUrl1: "https://i.postimg.cc/HxQWqstn/barbarians2.jpg",
       imageUrl2: "https://i.postimg.cc/HxQWqstn/barbarians2.jpg",
@@ -106,7 +110,7 @@ final List<Series> myListFilm = [
       'A lonely young woman, Sintel, helps and befriends a dragon,whom she calls Scales. But when he is kidnapped by an adult'
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
-  Series(
+  SeriesEntity(
       name: 'The Witcher',
       imageUrl1: "https://i.postimg.cc/RCLPsL4x/witcher1.jpg",
       imageUrl2: "https://i.postimg.cc/vHStkPKk/witcher2.jpg",
@@ -117,7 +121,7 @@ final List<Series> myListFilm = [
       'A lonely young woman, Sintel, helps and befriends a dragon,whom she calls Scales. But when he is kidnapped by an adult'
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
-  Series(
+  SeriesEntity(
       name: 'Vis a Vis',
       imageUrl1: "https://i.postimg.cc/SxJSyGGw/visavis1.jpg",
       imageUrl2: "https://i.postimg.cc/zDRPV7Tm/wp4651659.jpg",
@@ -128,7 +132,7 @@ final List<Series> myListFilm = [
       'A lonely young woman, Sintel, helps and befriends a dragon,whom she calls Scales. But when he is kidnapped by an adult'
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
-  Series(
+  SeriesEntity(
       name: 'Elite',
       imageUrl1: "https://i.postimg.cc/0yxYFbdM/elite2.jpg",
       imageUrl2: "https://i.postimg.cc/0yxYFbdM/elite2.jpg",
@@ -140,7 +144,7 @@ final List<Series> myListFilm = [
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
 
-  Series(
+  SeriesEntity(
       name: 'Sense 8',
       imageUrl1: "https://i.postimg.cc/fRB9P5Rp/sense82.jpg",
       imageUrl2: "https://i.postimg.cc/fRB9P5Rp/sense82.jpg",
@@ -151,7 +155,7 @@ final List<Series> myListFilm = [
           'A lonely young woman, Sintel, helps and befriends a dragon,whom she calls Scales. But when he is kidnapped by an adult'
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
-  Series(
+  SeriesEntity(
       name: 'Squid Game',
       imageUrl1: "https://i.postimg.cc/XJFXngnV/squid-game2.png",
       imageUrl2: "https://i.postimg.cc/XJFXngnV/squid-game2.png",
@@ -162,7 +166,7 @@ final List<Series> myListFilm = [
           'A lonely young woman, Sintel, helps and befriends a dragon,whom she calls Scales. But when he is kidnapped by an adult'
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
-  Series(
+  SeriesEntity(
       name: 'Barbarians',
       imageUrl1: "https://i.postimg.cc/HxQWqstn/barbarians2.jpg",
       imageUrl2: "https://i.postimg.cc/HxQWqstn/barbarians2.jpg",
@@ -173,7 +177,7 @@ final List<Series> myListFilm = [
           'A lonely young woman, Sintel, helps and befriends a dragon,whom she calls Scales. But when he is kidnapped by an adult'
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
-  Series(
+  SeriesEntity(
       name: 'The Witcher',
       imageUrl1: "https://i.postimg.cc/RCLPsL4x/witcher1.jpg",
       imageUrl2: "https://i.postimg.cc/vHStkPKk/witcher2.jpg",
@@ -186,8 +190,8 @@ final List<Series> myListFilm = [
           'her lost friend Scales.'),
 ];
 
-final List<Series> newestList = [
-  Series(
+final List<SeriesEntity> newestList = [
+  SeriesEntity(
       name: 'Elite',
       imageUrl1: "https://i.postimg.cc/0yxYFbdM/elite2.jpg",
       imageUrl2: "https://i.postimg.cc/0yxYFbdM/elite2.jpg",
@@ -198,7 +202,7 @@ final List<Series> newestList = [
       'A lonely young woman, Sintel, helps and befriends a dragon,whom she calls Scales. But when he is kidnapped by an adult'
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
-  Series(
+  SeriesEntity(
       name: 'Sense 8',
       imageUrl1: "https://i.postimg.cc/fRB9P5Rp/sense82.jpg",
       imageUrl2: "https://i.postimg.cc/fRB9P5Rp/sense82.jpg",
@@ -209,7 +213,7 @@ final List<Series> newestList = [
       'A lonely young woman, Sintel, helps and befriends a dragon,whom she calls Scales. But when he is kidnapped by an adult'
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
-  Series(
+  SeriesEntity(
       name: 'Squid Game',
       imageUrl1: "https://i.postimg.cc/XJFXngnV/squid-game2.png",
       imageUrl2: "https://i.postimg.cc/XJFXngnV/squid-game2.png",
@@ -220,7 +224,7 @@ final List<Series> newestList = [
       'A lonely young woman, Sintel, helps and befriends a dragon,whom she calls Scales. But when he is kidnapped by an adult'
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
-  Series(
+  SeriesEntity(
       name: 'Barbarians',
       imageUrl1: "https://i.postimg.cc/HxQWqstn/barbarians2.jpg",
       imageUrl2: "https://i.postimg.cc/HxQWqstn/barbarians2.jpg",
@@ -231,7 +235,7 @@ final List<Series> newestList = [
       'A lonely young woman, Sintel, helps and befriends a dragon,whom she calls Scales. But when he is kidnapped by an adult'
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
-  Series(
+  SeriesEntity(
       name: 'The Witcher',
       imageUrl1: "https://i.postimg.cc/RCLPsL4x/witcher1.jpg",
       imageUrl2: "https://i.postimg.cc/vHStkPKk/witcher2.jpg",
@@ -242,7 +246,7 @@ final List<Series> newestList = [
       'A lonely young woman, Sintel, helps and befriends a dragon,whom she calls Scales. But when he is kidnapped by an adult'
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
-  Series(
+  SeriesEntity(
       name: 'Vis a Vis',
       imageUrl1: "https://i.postimg.cc/SxJSyGGw/visavis1.jpg",
       imageUrl2: "https://i.postimg.cc/zDRPV7Tm/wp4651659.jpg",
@@ -253,7 +257,7 @@ final List<Series> newestList = [
       'A lonely young woman, Sintel, helps and befriends a dragon,whom she calls Scales. But when he is kidnapped by an adult'
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
-  Series(
+  SeriesEntity(
       remainTime: '11',
       name: 'Money Heist',
       imageUrl1: "https://i.postimg.cc/QCGtK6Qn/money-heist1.jpg",
@@ -266,7 +270,7 @@ final List<Series> newestList = [
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
 
-  Series( remainTime: '5',
+  SeriesEntity( remainTime: '5',
       name: 'Breaking Bad',
       imageUrl1: "https://i.postimg.cc/CMJk8BMN/breaking-bad1.jpg",
       imageUrl2: "https://i.postimg.cc/FHx7Mwfx/breaking-bad2.jpg",
@@ -277,7 +281,7 @@ final List<Series> newestList = [
       'A lonely young woman, Sintel, helps and befriends a dragon,whom she calls Scales. But when he is kidnapped by an adult'
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
-  Series( remainTime: '10',
+  SeriesEntity( remainTime: '10',
       name: '13 Reason Why',
       imageUrl1: "https://i.postimg.cc/Gpx38DPJ/13-reasons-why1.jpg",
       imageUrl2: "https://i.postimg.cc/prng8bbb/13-reasons-why2.jpg",
@@ -288,7 +292,7 @@ final List<Series> newestList = [
       'A lonely young woman, Sintel, helps and befriends a dragon,whom she calls Scales. But when he is kidnapped by an adult'
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
-  Series( remainTime: "7",
+  SeriesEntity( remainTime: "7",
       name: 'Dark',
       imageUrl1: "https://i.postimg.cc/rmmpB93Z/dark2.jpg",
       imageUrl2: "https://i.postimg.cc/rmmpB93Z/dark2.jpg",
@@ -299,7 +303,7 @@ final List<Series> newestList = [
       'A lonely young woman, Sintel, helps and befriends a dragon,whom she calls Scales. But when he is kidnapped by an adult'
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
-  Series( remainTime: '27',
+  SeriesEntity( remainTime: '27',
       name: 'Lucifer',
       imageUrl1: "https://i.postimg.cc/fyjsrt5T/lucifer2.jpg",
       imageUrl2: "https://i.postimg.cc/fyjsrt5T/lucifer2.jpg",
@@ -311,7 +315,7 @@ final List<Series> newestList = [
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
 
-  Series(
+  SeriesEntity(
       name: 'Vis a Vis',
       imageUrl1: "https://i.postimg.cc/SxJSyGGw/visavis1.jpg",
       imageUrl2: "https://i.postimg.cc/zDRPV7Tm/wp4651659.jpg",
@@ -322,7 +326,7 @@ final List<Series> newestList = [
       'A lonely young woman, Sintel, helps and befriends a dragon,whom she calls Scales. But when he is kidnapped by an adult'
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
-  Series( remainTime: '14',
+  SeriesEntity( remainTime: '14',
       name: 'The Witcher',
       imageUrl1: "https://i.postimg.cc/RCLPsL4x/witcher1.jpg",
       imageUrl2: "https://i.postimg.cc/vHStkPKk/witcher2.jpg",
@@ -333,7 +337,7 @@ final List<Series> newestList = [
       'A lonely young woman, Sintel, helps and befriends a dragon,whom she calls Scales. But when he is kidnapped by an adult'
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
-  Series(
+  SeriesEntity(
       name: 'Squid Game',
       imageUrl1: "https://i.postimg.cc/XJFXngnV/squid-game2.png",
       imageUrl2: "https://i.postimg.cc/XJFXngnV/squid-game2.png",
@@ -345,6 +349,11 @@ final List<Series> newestList = [
           'dragon, Sintel decides to embark on a dangerous quest to find'
           'her lost friend Scales.'),
 
+];
+
+
+final List<Widget> screens = [
+  HomeScreenMobile(),WatchScreenMobile(),LibraryScreenMobile(),Scaffold(),Scaffold(),
 ];
 
 

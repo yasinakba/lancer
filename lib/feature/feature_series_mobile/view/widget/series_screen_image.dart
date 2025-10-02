@@ -3,11 +3,13 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:lancer_resume/feature/feature_series_mobile/view/widget/custom_divider.dart';
 import 'package:lancer_resume/feature/feature_series_mobile/view/widget/series_screen_button.dart';
+import 'package:lancer_resume/feature/feature_series_mobile/view/widget/series_screen_desc.dart';
+import 'package:lancer_resume/global_entity/data.dart';
 import 'package:lancer_resume/global_entity/series.dart';
 import 'package:get/get.dart';
 
 class SeriesScreenImage extends StatefulWidget {
-  final Series series;
+  final SeriesEntity series;
 
   SeriesScreenImage({required this.series});
   bool isFavorite = false;
@@ -69,7 +71,7 @@ class _SeriesScreenImageState extends State<SeriesScreenImage> {
                     child: IconButton(
                       onPressed: null,
                       icon: Icon(
-                        Icons.play_arrow,
+                        Iconsax.play5,
                         size: 40.w,
                         color: Colors.white,
                       ),
