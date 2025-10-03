@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:lancer_resume/config/image/png.dart';
 import 'package:lancer_resume/feature/feature_home_mobile/view/widget/profile_header.dart';
 import 'package:lancer_resume/feature/feature_home_mobile/view/widget/rich_text_with_see_all.dart';
 import 'package:lancer_resume/feature/feature_home_mobile/view/widget/search_field.dart';
@@ -21,7 +22,7 @@ class LibraryScreenMobile extends StatelessWidget {
           SliverAppBar(
             backgroundColor: Colors.black,
             centerTitle: true,
-            title: Image.asset("assets/image/logo.png", width: 150.w),
+            title: Image.asset(PNG.logo, width: 150.w),
           ),
           SliverToBoxAdapter(
             child: Container(

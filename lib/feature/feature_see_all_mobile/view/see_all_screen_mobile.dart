@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
+import 'package:lancer_resume/config/image/png.dart';
 import 'package:lancer_resume/feature/feature_home_mobile/view/widget/search_field.dart';
 import 'package:lancer_resume/feature/feature_see_all_mobile/widget/library_card.dart';
 import 'package:lancer_resume/global_entity/data.dart';
@@ -28,7 +29,7 @@ class _SeeAllScreenMobileState extends State<SeeAllScreenMobile> {
             SliverAppBar(
               backgroundColor: Colors.black,
               centerTitle: true,
-              title: Image.asset("assets/image/logo.png", width: 150.w),
+              title: Image.asset(PNG.logo, width: 150.w),
             ),
             SliverToBoxAdapter(
               child: Container(

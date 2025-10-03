@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:lancer_resume/config/image/png.dart';
 import 'package:lancer_resume/feature/trailer_feature/view/widget/box_office_tab.dart';
 import 'package:lancer_resume/feature/trailer_feature/view/widget/trailer_tab.dart';
 
@@ -27,7 +28,7 @@ class _TrailerScreenMobileState extends State<TrailerScreenMobile> with SingleTi
             SliverAppBar(
               backgroundColor: Colors.black,
               centerTitle: true,
-              title: Image.asset("assets/image/logo.png", width: 150.w),
+              title: Image.asset(PNG.logo, width: 150.w),
             ),
              SliverToBoxAdapter(
                child: TabBar(

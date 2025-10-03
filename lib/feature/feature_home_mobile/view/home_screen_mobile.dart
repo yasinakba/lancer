@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:lancer_resume/config/image/png.dart';
 import 'package:lancer_resume/feature/feature_home_mobile/controller/home_mobile_controller.dart';
 import 'package:lancer_resume/feature/feature_home_mobile/view/widget/filter.dart';
 import 'package:lancer_resume/feature/feature_home_mobile/view/widget/profile_header.dart';
@@ -20,7 +21,7 @@ class HomeScreenMobile extends StatelessWidget {
         backgroundColor: Colors.black,
         elevation: 0,
         centerTitle: true,
-        title: Image.asset("assets/image/logo.png", width: 150.w),
+        title: Image.asset(PNG.logo, width: 150.w),
       ),
       body: GetBuilder<HomeControllerMobile>(
         builder: (controller) {
