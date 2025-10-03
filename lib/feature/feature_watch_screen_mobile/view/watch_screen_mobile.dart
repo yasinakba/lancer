@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:lancer_resume/feature/featur_navigation_bar/nave_screen.dart';
 import 'package:lancer_resume/feature/feature_watch_screen_mobile/widget/play_list_card.dart';
 import 'package:lancer_resume/global_entity/data.dart';
@@ -58,7 +59,19 @@ class _WatchScreenMobileState extends State<WatchScreenMobile> {
         SliverList(
           delegate: SliverChildBuilderDelegate((context, index) {
             SeriesEntity  series = featuredSeries[index];
-            return PlayListCard(index: index,series: series,);
+            return AnimationConfiguration.staggeredList(
+              position: index,
+              duration: Duration(milliseconds: 1000),
+              child: SlideAnimation(
+                duration: Duration(milliseconds: 1000),
+                curve: Curves.fastLinearToSlowEaseIn,
+                child: FlipAnimation(
+                  curve: Curves.fastLinearToSlowEaseIn,
+                  flipAxis: FlipAxis.y,
+                    duration: Duration(milliseconds: 2000),
+                    child: PlayListCard(index: index,series: series,)),
+              ),
+            );
             },
             childCount: featuredSeries.length,
           ),

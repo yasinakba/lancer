@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:lancer_resume/feature/feature_home_mobile/view/home_screen_mobile.dart';
 import 'package:lancer_resume/feature/feature_library_screen_mobile/view/library_screen_mobile.dart';
+import 'package:lancer_resume/feature/feature_profile_screen_mobile/view/profile_screen_mobile.dart';
 import 'package:lancer_resume/feature/feature_watch_screen_mobile/view/watch_screen_mobile.dart';
+import 'package:lancer_resume/feature/trailer_feature/view/trailer_screen.dart';
 import 'package:lancer_resume/global_entity/series.dart';
 
 
@@ -353,7 +355,7 @@ final List<SeriesEntity> newestList = [
 
 
 final List<Widget> screens = [
-  HomeScreenMobile(),WatchScreenMobile(),LibraryScreenMobile(),Scaffold(),Scaffold(),
+  HomeScreenMobile(),WatchScreenMobile(),LibraryScreenMobile(),TrailerScreenMobile(),ProfileScreenMobile(),
 ];
 
 
