@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:lancer_resume/feature/featur_navigation_bar/nave_screen.dart';
-import 'package:lancer_resume/feature/feature_home_mobile/view/home_screen_mobile.dart';
+import 'package:lancer_resume/feature/feature_home_screen/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,12 +15,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: Size(360,690),
+      minTextAdapt: true,
+      splitScreenMode: true,
       child: GetMaterialApp(
        debugShowCheckedModeBanner: false,
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
         ),
-        home: NavScreen(),
+        home: HomeScreen(),
       ),
     );
   }

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:lancer_resume/feature/feature_home_mobile/view/home_screen_mobile.dart';
-import 'package:lancer_resume/feature/feature_library_screen_mobile/view/library_screen_mobile.dart';
-import 'package:lancer_resume/feature/feature_profile_screen_mobile/view/profile_screen_mobile.dart';
-import 'package:lancer_resume/feature/feature_watch_screen_mobile/view/watch_screen_mobile.dart';
-import 'package:lancer_resume/feature/trailer_feature/view/trailer_screen.dart';
 import 'package:lancer_resume/global_entity/series.dart';
+
+import '../feature/feature_mobils/feature_home_mobile/view/home_screen_mobile.dart';
+import '../feature/feature_mobils/feature_library_screen_mobile/view/library_screen_mobile.dart';
+import '../feature/feature_mobils/feature_profile_screen_mobile/view/profile_screen_mobile.dart';
+import '../feature/feature_mobils/feature_watch_screen_mobile/view/watch_screen_mobile.dart';
+import '../feature/feature_mobils/trailer_feature/view/trailer_screen.dart';
 
 
 final List<SeriesEntity> featuredSeries = [
@@ -358,4 +359,12 @@ final List<Widget> screens = [
   HomeScreenMobile(),WatchScreenMobile(),LibraryScreenMobile(),TrailerScreenMobile(),ProfileScreenMobile(),
 ];
 
+var languages=["English","Spanish","Arabic"];
 
+List<String> castList = [
+"https://i.postimg.cc/pX3smXqN/1.jpg",
+"https://i.postimg.cc/pX3smXqN/2.jpg",
+"https://i.postimg.cc/pX3smXqN/3.jpg",
+"https://i.postimg.cc/pX3smXqN/4.jpg",
+"https://i.postimg.cc/pX3smXqN/5.jpg",
+];
